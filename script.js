@@ -35,7 +35,6 @@ const main = new Vue({
             },
         ],
         counter: 0, 
-        
        
     },
 
@@ -55,9 +54,12 @@ const main = new Vue({
                 
             }
         }, 
-
+        time() {
+            this.counter = setInterval(() => {
+                this.counter++;
+                console.log("counter");
+            }, 1000)
+        }
         
-       
-
     }
 })

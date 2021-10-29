@@ -36,6 +36,8 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
 }
 
 .containerMainImg .text {
@@ -101,4 +103,12 @@ body {
 .active {
     filter: brightness(2.5);
     box-shadow: 4px 2px 3px black;
+}
+
+.round-corner {
+    border-top-right-radius: 1rem;
+}
+
+.bottom-corner {
+    border-bottom-right-radius: 1rem;
 }

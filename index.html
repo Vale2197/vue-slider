@@ -28,8 +28,8 @@
             </div>
             <!-- image container -->
             <div class="sideImages">
-                <div :class="{'active': (images[counter].immagineLink === image.immagineLink)}" class="img" v-for="image in images">
-                    <img  :src="image.immagineLink" alt="">
+                <div :class="{'active': (images[counter].immagineLink === image.immagineLink), 'round-corner': (counter == 0 && index == 0), 'bottom-corner': (index == images.length - 1)}" class="img" v-for="(image, index) in images">
+                    <img :class="{'round-corner': (index == 0), 'bottom-corner': (index == images.length - 1)}" :src="image.immagineLink" alt="">
                 </div>
                 
                 <div class="buttons">
