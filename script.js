@@ -37,11 +37,22 @@ const main = new Vue({
         counter: 0,
         
     },
-    methods: {
-        
-        scrollUp() {
-            console.log("click");
 
+    methods: {
+        scrollUp(){
+            
+            if (this.counter == 0) {
+                this.counter = 5;
+            }
+            this.counter--
+        },
+        scrollDown() {
+            this.counter++
+            if(this.counter == 5) {
+                this.counter = 0
+                
+            }
         }
+        
     }
 })
