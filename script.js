@@ -55,11 +55,18 @@ const main = new Vue({
             }
         }, 
         time() {
-            this.counter = setInterval(() => {
-                this.counter++;
-                console.log("counter");
-            }, 1000)
+            setInterval(() => {
+                if(this.counter == this.images.length - 1) {
+                    this.counter = 0
+                    this.counter --
+                }
+                this.counter++
+            
+            }, 3000)
         }
         
+    },
+    mounted: function() {
+        this.time()
     }
 })
