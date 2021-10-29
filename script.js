@@ -34,25 +34,30 @@ const main = new Vue({
 
             },
         ],
-        counter: 0,
+        counter: 0, 
         
+       
     },
 
     methods: {
         scrollUp(){
             
             if (this.counter == 0) {
-                this.counter = 5;
+                this.counter = this.images.length;
             }
             this.counter--
+            
         },
         scrollDown() {
             this.counter++
-            if(this.counter == 5) {
+            if(this.counter == this.images.length) {
                 this.counter = 0
                 
             }
-        }
+        }, 
+
         
+       
+
     }
 })
