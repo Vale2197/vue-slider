@@ -16,7 +16,7 @@ const main = new Vue({
 
             },
             {
-                immagineLink: "./consegna2/img/03jpg",
+                immagineLink: "./consegna2/img/03.jpg",
                 titolo: "Gran Bretagna",
                 paragrafo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,"
 
@@ -33,6 +33,7 @@ const main = new Vue({
                 paragrafo: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam,"
 
             },
-        ]
+        ],
+        counter: 0,
     }
 })

@@ -15,37 +15,23 @@
         <div id="main" class="mainContainer">
     
             <div class="containerMainImg">
-                <img src="https://picsum.photos/400/400" alt="img">
+                <img :src="images[counter].immagineLink" alt="img">
     
                 <div class="text">
                     <h2>
-                        titolo
+                        {{images[counter].titolo}}
                     </h2>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum nulla tempore, amet harum maxime voluptatem. Earum tempore veniam atque cumque, nulla, harum accusamus sed velit omnis nesciunt placeat natus facere?
+                        {{images[counter].paragrafo}}
                     </p>
                 </div>
             </div>
             <!-- image container -->
             <div class="sideImages">
-                <div class="img">
-                    <img src="https://picsum.photos/400/400" alt="">
+                <div class="img" v-for="image in images">
+                    <img :src="image.immagineLink" alt="">
                 </div>
-                <div class="img">
-                    <img src="https://picsum.photos/400/400" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://picsum.photos/400/400" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://picsum.photos/400/400" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://picsum.photos/400/400" alt="">
-                </div>
-                <div class="img">
-                    <img src="https://picsum.photos/400/400" alt="">
-                </div>
+                
                 <div class="buttons">
                     <p class="up"><i class="fas fa-chevron-up"></i></p>
                     <p class="down"><i class="fas fa-chevron-down"></i></p>
