@@ -35,5 +35,13 @@ const main = new Vue({
             },
         ],
         counter: 0,
+        
+    },
+    methods: {
+        
+        scrollUp() {
+            console.log("click");
+
+        }
     }
 })

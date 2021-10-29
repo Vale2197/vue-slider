@@ -44,7 +44,8 @@ body {
     right: 2rem;
     text-align: end;
     width: 70%;
-    color: red;
+    color: white;
+    font-weight: bold;
 }
 
 .containerMainImg h2 {
